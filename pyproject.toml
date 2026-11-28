@@ -7,7 +7,24 @@ authors = [
     { name = "MKrzek", email = "mkrzek@googlemail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "black>=26.10.1",
+    "certifi>=2026.11.20",
+    "fastapi>=0.165.0",
+    "firecrawl>=4.57.0",
+    "isort>=9.0.2",
+    "jinja2>=3.1.6",
+    "langchain>=1.5.2",
+    "langchain-chroma>=1.2.0",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.8.4",
+    "langchain-openai>=1.8.5",
+    "langchain-pinecone>=0.2.13",
+    "langchain-tavily>=0.2.18",
+    "langchainhub>=0.1.21",
+    "openai>=3.58.0",
+]
 
 [project.scripts]
 rag-langchain-documentation-retriever = "rag_langchain_documentation_retriever:main"
@@ -15,3 +32,6 @@ rag-langchain-documentation-retriever = "rag_langchain_documentation_retriever:m
 [build-system]
 requires = ["uv_build>=0.13.7,<0.14.0"]
 build-backend = "uv_build"
+
+[tool.uv]
+package = false
